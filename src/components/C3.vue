@@ -6,7 +6,7 @@
             <div v-else class="card">
                 <h1 v-text="something.chartName"></h1>
                 <div v-for="currency in something.bpi" :key="currency.code">
-                    <span class="desc">{{currency.description}}: </span>
+                    <span class="desc">{{currency.description}}:&nbsp;&nbsp;</span>
                     <span v-html="currency.symbol"></span>
                     <span>{{currency.rate_float | currencyDecimal}}</span>
                 </div>
@@ -51,6 +51,7 @@
         font-family: 'Roboto Slab', sans-serif;
         /*display: table;*/
         padding-top: 10%;
+        font-weight: bold;
     }
 
     .content {
@@ -64,7 +65,6 @@
     h1 {
         text-align: center;
         margin: 0;
-        font-weight: bold;
         color: #c9d0d6;
     }
 
