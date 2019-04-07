@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import C2 from './components/C2'
 import C1 from './components/C1'
@@ -9,6 +11,7 @@ import Error from './components/404'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
 
 
 const routes = [
