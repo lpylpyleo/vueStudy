@@ -22,7 +22,7 @@ export default new Vuex.Store({
     },
     actions: {
         addAction({commit}) {
-            setTimeout(()=>commit('increment'),3000)
+            setTimeout(()=>commit('increment'),1000)
         }
     }
 });
